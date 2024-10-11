@@ -1,0 +1,49 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+    'aside main main main main'
+    'aside main main main main'
+    'aside main main main main';
+}
+
+header{
+    display: grid; 
+    grid-area: header;  
+    grid-template-columns: repeat(5,20%);
+   
+}
+
+aside{
+    grid-area:aside;
+    display: grid;
+    grid-template-rows: repeat(10,7%);
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    padding: 10px;
+}
+
+.account{
+    grid-column: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    align-items: center ;
+}
+
+.search{
+    
+}
+
+p{
+    color:#515151;
+    
+}
+h4, h3{
+    margin:5px 0px;
+}
